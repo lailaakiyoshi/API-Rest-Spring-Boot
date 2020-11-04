@@ -1,21 +1,21 @@
-package com.br.apirestspringboot.model;
+package com.br.apirestspringboot.data.vo;
 
 import java.io.Serializable;
 
-public class Person implements Serializable{
-    
-    private static final long serialVersionUID = 1L;
+public class PersonVO implements Serializable{
 
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String gender;
+	private static final long serialVersionUID = 1L;
 
-    public Person(){
-    }
-    
-    public Long getId() {
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String gender;
+	
+	public PersonVO() {
+	}
+
+	public Long getId() {
 		return id;
 	}
 
@@ -75,7 +75,7 @@ public class Person implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Person other = (Person) obj;
+		PersonVO other = (PersonVO) obj;
 		if (address == null) {
 			if (other.address != null)
 				return false;
@@ -103,6 +103,5 @@ public class Person implements Serializable{
 			return false;
 		return true;
 	}
+
 }
-
-
