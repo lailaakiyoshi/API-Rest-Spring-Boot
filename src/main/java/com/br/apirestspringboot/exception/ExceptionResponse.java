@@ -1,4 +1,5 @@
 package com.br.apirestspringboot.exception;
+
 import java.io.Serializable;
 import java.util.Date;
 
