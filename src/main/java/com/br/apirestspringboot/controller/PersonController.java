@@ -22,17 +22,17 @@ public class PersonController {
 
 	@Autowired
 	private PersonServices service;
-	
+
 	@GetMapping
 	public List<PersonVO> findAll() {
 		return service.findAll();
-	}	
-	
+	}
+
 	@GetMapping("/{id}")
 	public PersonVO findById(@PathVariable("id") Long id) {
 		return service.findById(id);
-	}	
-	
+	}
+
 	@PostMapping
 	public PersonVO create(@RequestBody PersonVO person) {
 		return service.create(person);
